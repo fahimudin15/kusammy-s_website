@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thrifts & Fashion — Kusammy’s Store</title>
+    <meta name="description" content="Shop affordable fashion: thrifts, new clothes, bags, and shoes.">
+    <meta property="og:title" content="Thrifts & Fashion — Kusammy’s Store">
+    <meta property="og:description" content="Affordable fashion essentials and unique finds.">
+    <link rel="icon" href="/assets/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { theme: { extend: { colors: { blush: {500:'#f06a8c',600:'#d64c74'}, gold:'#c8a356', cream:'#faf6f3' }, fontFamily:{ display:["Poppins","ui-sans-serif"], sans:["Inter","ui-sans-serif"] }, boxShadow:{ soft:'0 10px 25px -10px rgba(0,0,0,0.15)'} } } };
+    </script>
+  </head>
+  <body class="bg-cream text-slate-800 antialiased">
+    <header class="sticky top-0 z-40 bg-cream/80 backdrop-blur border-b border-black/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <a href="/" class="font-display">Kusammy’s Store</a>
+        <nav class="flex items-center gap-3">
+          <a href="/beauty.html" class="px-4 py-2 rounded-full border border-gold hover:bg-gold hover:text-white">Beauty</a>
+          <a href="/" class="px-4 py-2 rounded-full bg-blush-500 text-white hover:bg-blush-600">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pt-10">
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="font-display text-3xl sm:text-4xl font-semibold">Thrifts & Fashion</h1>
+        <p class="mt-3 text-slate-600 max-w-2xl">Find unique pieces, seasonal drops, and everyday staples at friendly prices.</p>
+
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Product Card -->
+          <article class="bg-white border border-black/5 rounded-2xl shadow-soft overflow-hidden">
+            <div class="aspect-[4/3] bg-[url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+            <div class="p-4">
+              <h3 class="font-semibold">Chic Tote Bag</h3>
+              <p class="text-sm text-slate-600 mt-1">Roomy tote with gold accents.</p>
+              <div class="mt-3 flex items-center justify-between">
+                <span class="font-semibold">₦12,000</span>
+                <a href="#contact" class="text-blush-600 hover:underline">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white border border-black/5 rounded-2xl shadow-soft overflow-hidden">
+            <div class="aspect-[4/3] bg-[url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+            <div class="p-4">
+              <h3 class="font-semibold">Wrap Dress</h3>
+              <p class="text-sm text-slate-600 mt-1">Flattering silhouette for any occasion.</p>
+              <div class="mt-3 flex items-center justify-between">
+                <span class="font-semibold">₦9,500</span>
+                <a href="#contact" class="text-blush-600 hover:underline">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-white border border-black/5 rounded-2xl shadow-soft overflow-hidden">
+            <div class="aspect-[4/3] bg-[url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop')] bg-cover bg-center"></div>
+            <div class="p-4">
+              <h3 class="font-semibold">Classic Sneakers</h3>
+              <p class="text-sm text-slate-600 mt-1">Comfort meets style for daily wear.</p>
+              <div class="mt-3 flex items-center justify-between">
+                <span class="font-semibold">₦14,000</span>
+                <a href="#contact" class="text-blush-600 hover:underline">Inquire</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-12 flex flex-wrap gap-4">
+          <a href="/" class="px-5 py-3 rounded-full border border-gold hover:bg-gold hover:text-white">Back to Home</a>
+          <a href="#contact" class="px-5 py-3 rounded-full bg-blush-500 text-white hover:bg-blush-600">Contact to Order</a>
+        </div>
+      </section>
+
+      <section id="contact" class="mt-16 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white p-6 rounded-2xl shadow-soft border border-black/5">
+          <h2 class="font-display text-2xl font-semibold">Order via WhatsApp</h2>
+          <p class="mt-2 text-slate-600 text-sm">Tap the button below and tell us the product you’re interested in.</p>
+          <a href="https://wa.me/2348000000000?text=Hello%20Kusammy,%20I%20want%20to%20order%20from%20the%20Fashion%20page." target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-4 px-5 py-3 rounded-full bg-blush-500 text-white hover:bg-blush-600">
+            WhatsApp Us
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-16 border-t border-black/5 py-8 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+        <div class="text-sm text-slate-600">© <span id="year"></span> Kusammy’s Store</div>
+        <a href="/beauty.html" class="text-sm text-blush-600 hover:underline">Explore Beauty →</a>
+      </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kusammy’s Store — Beauty & Fashion Boutique</title>
+    <meta name="description" content="Glow. Style. Empower. Discover curated cosmetics, skincare, and affordable fashion at Kusammy’s Store.">
+    <meta name="keywords" content="Kusammy, beauty, cosmetics, skincare, fashion, thrifts, bags, shoes, boutique">
+    <meta name="author" content="Kusammy">
+    <meta property="og:title" content="Kusammy’s Store — Beauty & Fashion Boutique">
+    <meta property="og:description" content="Curated cosmetics & skincare. Affordable fashion: thrifts, new clothes, bags, and shoes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:image" content="/assets/og.jpg">
+    <link rel="icon" href="/assets/favicon.ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blush: {
+                50: '#fff6f8',
+                100: '#ffe9ef',
+                200: '#ffd1dc',
+                300: '#ffafc1',
+                400: '#ff86a0',
+                500: '#f06a8c',
+                600: '#d64c74',
+                700: '#b3385d',
+                800: '#8f2e4b',
+                900: '#742841'
+              },
+              cream: '#faf6f3',
+              gold: '#c8a356'
+            },
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica", "Arial", "Noto Sans", "sans-serif"],
+              display: ["Poppins", "ui-sans-serif", "system-ui", "sans-serif"]
+            },
+            boxShadow: {
+              soft: '0 10px 25px -10px rgba(0,0,0,0.15)'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      .reveal { opacity: 0; transform: translateY(16px); transition: all .6s ease; }
+      .reveal.show { opacity: 1; transform: translateY(0); }
+    </style>
+  </head>
+  <body class="bg-cream text-slate-800 antialiased">
+    <header class="fixed top-0 inset-x-0 z-50 bg-cream/80 backdrop-blur border-b border-black/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="/" class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-blush-500 ring-2 ring-gold grid place-items-center text-white font-bold">K</div>
+            <span class="font-display text-lg tracking-wide">Kusammy’s Store</span>
+          </a>
+          <nav class="hidden md:flex items-center gap-8">
+            <a href="#about" class="hover:text-blush-600">About</a>
+            <a href="#services" class="hover:text-blush-600">Services</a>
+            <a href="#contact" class="hover:text-blush-600">Contact</a>
+            <a href="/beauty.html" class="px-4 py-2 rounded-full bg-blush-500 text-white hover:bg-blush-600 shadow-soft">Explore Beauty</a>
+            <a href="/fashion.html" class="px-4 py-2 rounded-full border border-gold text-slate-800 hover:bg-gold hover:text-white transition">Shop Fashion</a>
+          </nav>
+          <button id="menuBtn" aria-label="Open menu" class="md:hidden p-2 rounded hover:bg-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden border-t border-black/5 bg-cream">
+        <div class="px-4 py-4 space-y-3">
+          <a href="#about" class="block">About</a>
+          <a href="#services" class="block">Services</a>
+          <a href="#contact" class="block">Contact</a>
+          <div class="pt-2 flex gap-3">
+            <a href="/beauty.html" class="flex-1 text-center px-4 py-2 rounded-full bg-blush-500 text-white">Explore Beauty</a>
+            <a href="/fashion.html" class="flex-1 text-center px-4 py-2 rounded-full border border-gold">Shop Fashion</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="relative min-h-[90vh] flex items-center pt-24 overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-br from-blush-50 via-cream to-white"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+          <div class="reveal" data-animate>
+            <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
+              Glow. <span class="text-blush-600">Style.</span> Empower.
+            </h1>
+            <p class="mt-4 text-lg text-slate-600 max-w-xl">
+              Welcome to Kusammy’s Store, your boutique for curated cosmetics, skin care, and affordable fashion. Feel confident in your glow and style everyday.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="/beauty.html" class="px-6 py-3 rounded-full bg-blush-500 text-white hover:bg-blush-600 shadow-soft">Explore Beauty</a>
+              <a href="/fashion.html" class="px-6 py-3 rounded-full border border-gold text-slate-800 hover:bg-gold hover:text-white transition">Shop Fashion</a>
+            </div>
+          </div>
+          <div class="relative reveal" data-animate>
+            <div class="aspect-[4/3] rounded-3xl bg-[url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center shadow-soft"></div>
+            <div class="absolute -bottom-6 -left-6 w-24 h-24 rounded-2xl bg-gold/90 blur-2xl opacity-40 -z-10"></div>
+            <div class="absolute -top-6 -right-6 w-24 h-24 rounded-2xl bg-blush-400/90 blur-2xl opacity-40 -z-10"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-3 gap-10 items-start">
+            <div class="lg:col-span-2 reveal" data-animate>
+              <h2 class="font-display text-3xl sm:text-4xl font-semibold">About Kusammy’s Store</h2>
+              <p class="mt-4 text-slate-600">
+                At Kusammy’s Store, we celebrate beauty and style that empowers. We carefully source skin-loving cosmetics and pair them with chic, budget-friendly fashion so you can express your unique identity with confidence.
+              </p>
+              <p class="mt-4 text-slate-600">
+                Our mission is simple: quality, accessibility, and authenticity. We believe everyone deserves to look and feel amazing without compromise.
+              </p>
+            </div>
+            <aside class="reveal" data-animate>
+              <div class="p-6 bg-white rounded-2xl shadow-soft border border-black/5">
+                <div class="flex items-center gap-4">
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" alt="Founder portrait" class="w-16 h-16 rounded-full object-cover">
+                  <div>
+                    <div class="font-semibold">Kusammy</div>
+                    <div class="text-sm text-slate-500">Founder & CEO</div>
+                  </div>
+                </div>
+                <p class="mt-4 text-slate-600 text-sm leading-relaxed">
+                  From a passion for self-care and personal style, Kusammy built a boutique that blends beauty with fashion. Her vision is a welcoming space where quality meets affordability.
+                </p>
+                <blockquote class="mt-4 border-l-4 border-gold pl-4 italic text-slate-700">
+                  “Confidence is the best outfit. Rock it and own it.”
+                </blockquote>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="font-display text-3xl sm:text-4xl font-semibold text-center">What We Offer</h2>
+          <p class="mt-3 text-center text-slate-600 max-w-2xl mx-auto">Explore our core categories and services, crafted to elevate your routine and wardrobe.</p>
+          <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="reveal" data-animate>
+              <div class="h-full p-6 bg-cream rounded-2xl border border-black/5 shadow-soft">
+                <div class="w-10 h-10 rounded-lg bg-blush-100 text-blush-600 grid place-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M12 1.999a2 2 0 00-2 2v2H8a2 2 0 00-2 2v1H4a2 2 0 00-2 2v1a6 6 0 006 6h4a6 6 0 006-6v-1a2 2 0 00-2-2h-2V8a2 2 0 00-2-2h-2v-2a2 2 0 012-2z"/></svg>
+                </div>
+                <h3 class="mt-4 font-semibold text-lg">Cosmetics & Skin Care</h3>
+                <p class="mt-2 text-slate-600 text-sm">Curated products for healthy, glowing skin and effortless beauty.</p>
+                <a href="/beauty.html" class="mt-4 inline-block text-blush-600 hover:underline">Explore Beauty →</a>
+              </div>
+            </div>
+            <div class="reveal" data-animate>
+              <div class="h-full p-6 bg-cream rounded-2xl border border-black/5 shadow-soft">
+                <div class="w-10 h-10 rounded-lg bg-blush-100 text-blush-600 grid place-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M6 2a1 1 0 00-1 1v2h10V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zM4 7a2 2 0 00-2 2v5a3 3 0 003 3h10a3 3 0 003-3V9a2 2 0 00-2-2H4z"/></svg>
+                </div>
+                <h3 class="mt-4 font-semibold text-lg">Thrifts & Fashion</h3>
+                <p class="mt-2 text-slate-600 text-sm">Affordable thrifts and new arrivals: clothes, bags, and shoes.</p>
+                <a href="/fashion.html" class="mt-4 inline-block text-blush-600 hover:underline">Shop Fashion →</a>
+              </div>
+            </div>
+            <div class="reveal" data-animate>
+              <div class="h-full p-6 bg-cream rounded-2xl border border-black/5 shadow-soft">
+                <div class="w-10 h-10 rounded-lg bg-blush-100 text-blush-600 grid place-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a4 4 0 00-4 4v2H5a3 3 0 000 6h10a3 3 0 000-6h-1V6a4 4 0 00-4-4z"/></svg>
+                </div>
+                <h3 class="mt-4 font-semibold text-lg">Personal Styling</h3>
+                <p class="mt-2 text-slate-600 text-sm">Book a session for personalized looks tailored to you.</p>
+                <a href="#contact" class="mt-4 inline-block text-blush-600 hover:underline">Inquire →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-10 items-start">
+            <div class="reveal" data-animate>
+              <h2 class="font-display text-3xl sm:text-4xl font-semibold">Get in Touch</h2>
+              <ul class="mt-6 space-y-3 text-slate-700">
+                <li><strong>Email:</strong> <a href="mailto:agunbiadehauwa58@gmail.com" class="text-blush-600 hover:underline">agunbiadehauwa58@gmail.com</a></li>
+                <li><strong>Phone:</strong> <a href="tel:+2349065221101" class="text-blush-600 hover:underline">+234 9065221101</a></li>
+                <li><strong>Instagram:</strong> <a href="https://instagram.com/kusammy" target="_blank" rel="noopener" class="text-blush-600 hover:underline">@kusammy</a></li>
+                <li><strong>WhatsApp:</strong> <a href="https://wa.me/2349065221101" target="_blank" rel="noopener" class="text-blush-600 hover:underline">Chat on WhatsApp</a></li>
+                <li><strong>Location:</strong> Kaduna, Nigeria</li>
+              </ul>
+            </div>
+            <form class="reveal bg-white p-6 rounded-2xl shadow-soft border border-black/5" data-animate onsubmit="event.preventDefault(); window.location.href='https://wa.me/2349065221101?text=' + encodeURIComponent('Hello Kusammy, I would like to make an inquiry.');">
+              <label class="block text-sm font-medium">Name
+                <input required type="text" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blush-300" placeholder="Your name"/>
+              </label>
+              <label class="block text-sm font-medium mt-4">Email
+                <input required type="email" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blush-300" placeholder="you@example.com"/>
+              </label>
+              <label class="block text-sm font-medium mt-4">Message
+                <textarea required rows="4" class="mt-1 w-full rounded-lg border border-slate-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blush-300" placeholder="Tell us what you need..."></textarea>
+              </label>
+              <button type="submit" class="mt-6 w-full px-5 py-3 rounded-lg bg-blush-500 text-white hover:bg-blush-600">Send via WhatsApp</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-black/5 py-8 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-sm text-slate-600">© <span id="year"></span> Kusammy’s Store. All rights reserved.</div>
+        <div class="flex items-center gap-6 text-sm">
+          <a href="#about" class="hover:text-blush-600">About</a>
+          <a href="#services" class="hover:text-blush-600">Services</a>
+          <a href="#contact" class="hover:text-blush-600">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
